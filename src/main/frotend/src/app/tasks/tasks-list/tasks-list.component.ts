@@ -28,8 +28,7 @@ export class TasksListComponent implements OnInit {
   }
 
   onTaskChange(event, task) {
-    console.log(event);
-    //this.taskService.saveTask(task, event.target.checked).subscribe();
+    this.taskService.saveTask(task, event.target.checked).subscribe();
   }
 
 }
